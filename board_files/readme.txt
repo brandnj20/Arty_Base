@@ -1,0 +1,1 @@
+Drop the arty-a7-35 folder into the Xilinx board files folder. Mine was C:\Xilinx\Vivado\2017.4\data\boards\board_files

@@ -1,0 +1,7 @@
+#Ignore the vivado project folder in repo root
+/ARTY_BASE/
+#Ignore the vivado project folder in repo root
+/.Xil/
+#Ignore some log files in repo root
+/*.jou
+/*.log
