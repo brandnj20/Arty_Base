@@ -9,28 +9,18 @@ http://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html Je
 - You MUST Drop the board_files/arty-a7-35 folder into the Xilinx board files folder. Mine was C:\Xilinx\Vivado\2017.4\data\boards\board_files. The script will fail if you do not have it. You could delete the lines in the build project tcl file and add the part yourself if you wanted.
 - To see the output of the UART you need to the drivers for the Cypress USB chip on the ARTY board and a terminal program set to 9600 8 Data Bits. 1 Stop. No Parity.
 
-# repo structure
-
+# Repo Structure
 /ARTY_BASE
 
-	ARTY_BASE.bat			This just calls the build_project.tcl
-	
-	ARTY_BASE_build_bd.tcl
-	
-	ARTY_BASE_build_project.tcl
-	
-	/bootimage					.mcs file for flashing the QSPI
-	
-	/fsbl						not used 
-	
-	/ip_repo					not used
-	
-	/readme						contains this readme
-	
-	/sw							contains main.c		
-	
-	/xdc						not used
-	
+	ARTY_BASE.bat			This just calls the build_project.tcl	
+	ARTY_BASE_build_bd.tcl	
+	ARTY_BASE_build_project.tcl	
+	/bootimage					.mcs file for flashing the QSPI	
+	/fsbl						not used 	
+	/ip_repo					not used	
+	/readme						contains this readme	
+	/sw							contains main.c			
+	/xdc						not used	
 	/board_files				drop the arty-a7-35 folder into your xilinx install board folder.
 	
 # Creating project from script.
@@ -49,8 +39,8 @@ http://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html Je
 - Double Click Xilinx C/C++ application (System Debugger)
 - Check Reset entire system and Program FPGA. Apply. Run. 
 
-# Programming QSPI https://forums.xilinx.com/t5/Configuration/How-to-program-bit-and-elf-files-into-VC707-development-board/td-p/648899
-
+# Programming QSPI 
+https://forums.xilinx.com/t5/Configuration/How-to-program-bit-and-elf-files-into-VC707-development-board/td-p/648899
 
 # Contents of .gitignore.
 	#Ignore the vivado project folder in repo root
